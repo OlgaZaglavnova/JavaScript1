@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript1 Lesson2 Task5</title>
+</head>
+<body>
+	<script>
+		'use strict'
+		/*
+		5 Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+переданного значения операции (использовать switch) выполнить одну из арифметических
+операций
+(использовать функции из задания 4) и вернуть полученное значение.
+		*/
+		/**
+		* Функция возвращает сумму двух чисел
+		* @param {number} a
+		* @param {number} b
+		* @returns{number}
+		 */
+	function summarize (a, b) {
+		return a + b;
+	} 
+	/**
+	 * Функция возвращает разность двух чисел
+	 * @param {number} a
+	 * @param {number} b
+	 * @returns{number};
+	 */
+ 	function subtract(a,b){
+		return a - b;
+	}
+	/**
+	 * Функция возвращает произведение двух чисел
+	 * @param {number} a
+	 * @param {number} b
+	 * @returns{number};
+	 */
+	function multiply(a, b){
+		return a * b;
+	}
+	/**
+	 * Функция возвращает частное двух чисел
+	 * @param {number} a
+	 * @param {number} b
+	 * @returns{number};
+	 */
+	function divide(a, b){
+		return a / b;
+	}
+	/**
+	 * Функция выполняет заданную операцию для двух чисел
+	 * @param{Number}arg1
+	 * @param{Number}arg2
+	 * @param{string}operation
+	 * @returns{Number/string}
+	 */
+	function mathOperation(arg1, arg2, operation){
+		switch (operation){
+			case "сложить":
+				return summarize (arg1, arg2);
+				break;
+			case "вычесть":
+				return subtract (arg1, arg2);
+				break;
+			case "умножить":
+				return multiply (arg1, arg2);
+				break;
+			case "разделить":
+				return divide (arg1, arg2);
+				break;
+			default:
+				return "Неизвестная операция " + oper;
+		}
+	}	
+	let oper = prompt("Введите название операции (сложить/вычесть/умножить/разделить):").toLowerCase();
+	let a1 = Number(prompt("Введите первый аргумент:"));
+	let a2 = Number(prompt("Введите второй аргумент:"));
+	alert(mathOperation(a1, a2, oper));	
+	
+	</script>
+</body>
+</html>
