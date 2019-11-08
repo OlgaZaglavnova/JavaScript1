@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: gray;
+}
+table{
+    border-collapse: collapse;
+}
+.chessCell{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;;
+}
+.rowHeader{
+    font-weight: 700;
+    text-align: center;
+}
+.white{
+    background-color: white;
+}
+.black{
+    background-color: darkgrey;
+}
+.upBorder{
+    border-top: 3px solid black;
+}
+.downBorder{
+    border-bottom: 3px solid black;
+}
+.leftBorder{
+    border-left: 3px solid black;
+}
+.rightBorder{
+    border-right: 3px solid black;
+}
+button{
+    border: none;
+    box-shadow: 0px 1px 0px #666,0px 5px 0px #444,0px 6px 6px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.buttonOnClick{
+    box-shadow: none;
+}
