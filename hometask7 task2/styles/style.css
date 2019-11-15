@@ -1,0 +1,20 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.board{
+	border-collapse: collapse;
+	margin: 50px 50px;
+}
+.boardCell{
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+	text-align: center;
+}
+.gameMessage{
+	font-size: 24px;
+	color: red;
+	line-height: 30px;
+	margin-left: 10px;
+}
